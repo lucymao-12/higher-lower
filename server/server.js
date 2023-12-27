@@ -78,10 +78,22 @@ class Track {
   }
 }
 
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
 app.get("/", (req, res) => {
   try {
-    const track = new Track(playlistData.tracks.items[0].track);
-    res.status(200).json(track);
+    const tracks = [];
+    for (let i = 0; i < playlistData.tracks.items.length; i++) {
+      tracks.push(new Track(playlistData.tracks.items[i].track));
+    }
+    shuffle(tracks);
+    res.status(200).json(tracks);
   } catch (err) {
     console.error(err);
     res.status(500).send("Server error");
