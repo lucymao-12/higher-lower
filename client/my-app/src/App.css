@@ -1,1 +1,91 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
 
+.button {
+  height: 3rem;
+  width: 10rem;
+  font-size: 2rem;
+  background-color: rgb(206, 222, 228) !important;
+  border: 0px !important;
+  color: #000 !important;
+  font-family: "Odor Mean Chey", serif !important;
+}
+.button:hover {
+  background-color: #000000 !important;
+  color: rgb(194, 194, 194) !important;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Odor Mean Chey", serif;
+}
+
+.rules {
+  font-family: "Quicksand", sans-serif;
+  margin: 5%;
+  text-align: center;
+}
+.link-no-style {
+  color: inherit;
+  text-decoration: none;
+  font-family: "Quicksand", sans-serif;
+}
+
+.link-no-style:hover {
+  font-weight: bold;
+}
+.track-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.track-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  background-color: rgb(206, 222, 228);
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+@media (max-width: 1000px) {
+  .track-info {
+    flex-direction: column;
+  }
+}
+.popularity {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+}
+
+.info {
+  margin-bottom: 0;
+}
+.track {
+  border: 4px solid rgb(55, 55, 55);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+.ending{
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 5%;
+}
