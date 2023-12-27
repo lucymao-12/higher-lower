@@ -121,7 +121,9 @@ function App() {
                 <p className="info">Name: {currentTrackLeft.name}</p>
                 <p className="info">Artist: {currentTrackLeft.artist}</p>
               </div>
-              <h2 style={{ margin: "1rem" }}>Score: {score}</h2>
+              <h2 style={{ marginTop: "2rem", marginLeft: "1rem" }}>
+                Score: {score}
+              </h2>
             </div>
             <div className="rightTrack">
               <img
