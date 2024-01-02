@@ -69,7 +69,7 @@ function App() {
           >
             Spotify higher or Lower
           </h1>
-          <div className="button-container">
+          <div className="button-container main">
             <button onClick={startGame} className="button btn btn-primary">
               Start
             </button>
@@ -97,7 +97,7 @@ function App() {
             If you think that the song on the right is more popular than the
             song on the left press higher, else lower. It's as simple as that!
           </p>
-          <div className="button-container">
+          <div className="button-container main">
             <button onClick={startGame} className="button btn btn-primary">
               Start
             </button>
@@ -106,14 +106,13 @@ function App() {
       )}
       {currentPage === "game" && (
         <div>
+          <div className="info-container">
+            <h2 className="score">Score: {score}</h2>
+            <p className="popularity">
+              Popularity: {currentTrackLeft.popularity}
+            </p>
+          </div>
           <div className="track-container">
-            <div className="info-container">
-              <p className="popularity">
-                Popularity: {currentTrackLeft.popularity}
-              </p>
-              <h2 className="score">Score: {score}</h2>
-            </div>
-
             <div className="leftTrack">
               <img
                 className="track"
