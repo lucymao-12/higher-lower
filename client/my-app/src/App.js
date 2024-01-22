@@ -108,9 +108,6 @@ function App() {
         <div>
           <div className="info-container">
             <h2 className="score">Score: {score}</h2>
-            <p className="popularity">
-              Popularity: {currentTrackLeft.popularity}
-            </p>
           </div>
           <div className="track-container">
             <div className="leftTrack">
@@ -123,6 +120,9 @@ function App() {
                 <p className="info">Name: {currentTrackLeft.name}</p>
                 <p className="info">Artist: {currentTrackLeft.artist}</p>
               </div>
+              <p className="popularity">
+                Popularity: {currentTrackLeft.popularity}
+              </p>
             </div>
             <div className="rightTrack">
               <img

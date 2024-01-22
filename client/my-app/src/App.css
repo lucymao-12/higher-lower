@@ -24,7 +24,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 2rem;
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
   font-size: 2rem;
   font-family: "Odor Mean Chey", serif;
 }
@@ -53,18 +53,20 @@
 .track-info {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 1rem;
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   background-color: rgb(206, 222, 228);
   margin-top: 0.5rem;
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
   border-radius: 10px;
   font-size: large;
   text-align: center;
   border: rgb(55, 55, 55) solid 2px;
   box-shadow:#777777 5px 5px 5px;
-  min-width: 3rem;
+  height: 5rem;
+  overflow: hidden;
 }
 @media (max-width: 1000px) {
   .track-info {
@@ -79,6 +81,7 @@
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 1.5rem;
+  margin: 1rem;
 }
 
 .info {
@@ -86,7 +89,7 @@
 }
 .track {
   border: 4px solid rgb(55, 55, 55);
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
   border-radius: 10px;
   min-width: 300px;
   height: auto;
@@ -102,24 +105,28 @@
 }
 .leftTrack {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
 }
 .rightTrack {
   display: flex;
+  flex: 1;
   flex-direction: column;
   align-items: center;
 }
 .score {
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 .info-container{
   display: flex;
   flex-direction: column;
   justify-content:space-between;
-  margin-left: 5rem;
-  margin-top: 1rem;
+  margin: 3rem;
+  
 }
 /* For screens wider than 600px, image takes up 50% of the container width */
 @media (min-width: 600px) {
@@ -146,4 +153,5 @@
   flex-direction: column;
   align-items: center;
 }
+
 
