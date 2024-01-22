@@ -64,7 +64,7 @@
   text-align: center;
   border: rgb(55, 55, 55) solid 2px;
   box-shadow:#777777 5px 5px 5px;
-
+  min-width: 3rem;
 }
 @media (max-width: 1000px) {
   .track-info {
